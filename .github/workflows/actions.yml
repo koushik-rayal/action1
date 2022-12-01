@@ -4,8 +4,9 @@ on:
   push:
     branches: [ master ]
     paths:
-    - 'actions.yml'
-    - '!simple.yml'
+    - "actions.yml"
+    paths-ignore:
+      - "simple.yml"
   workflow_dispatch:
     
   #repository_dispatch:
