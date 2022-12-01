@@ -3,14 +3,15 @@ name: Actions Workflow
 on:
   push:
     branches: [ master ]
+    paths:
+    - '!simple.yml'
   workflow_dispatch:
     
   #repository_dispatch:
   #  types: [build]
   schedule:
    - cron: "0/15 * * * *"
-  paths:
-    - '!simple.yml'
+  
   pull_request:
     types: [closed, assigned, opened, reopened]
 
