@@ -9,7 +9,7 @@ on:
   #  types: [build]
   schedule:
    - cron: "0/15 * * * *"
-  path:
+  paths:
     - '!simple.yml'
   pull_request:
     types: [closed, assigned, opened, reopened]
