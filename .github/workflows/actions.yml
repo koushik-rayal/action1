@@ -8,7 +8,9 @@ on:
   #repository_dispatch:
   #  types: [build]
   schedule:
-   - cron: "*/15 * * * *"
+   - cron: "0/15 * * * *"
+  path:
+    - '!simple.yml'
   pull_request:
     types: [closed, assigned, opened, reopened]
 
