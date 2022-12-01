@@ -4,6 +4,7 @@ on:
   push:
     branches: [ master ]
     paths:
+    - 'actions.yml'
     - '!simple.yml'
   workflow_dispatch:
     
